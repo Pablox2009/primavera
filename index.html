@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 de septiembre</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <h1 id="desaparecer">Haz clic aquí</h1>
+    <div class="s1">
+        <img src="style/image/pngwing.com.png" class="img1" id="aparecer">
+    </div>
+    <div class="s2">
+        <img src="style/image/pngwing.com (1).png" class="img2" id="aparecer1">
+    </div>
+    <div class="s3">
+        <img src="style/image/pngwing.com (2).png" class="img3" id="aparecer2">
+    </div>
+    <footer>
+        <p>Este 1° de Septiembre se lo conoce por entregar tulipánes a las personas.<br>Me hubiese encantado darte unas reales, 
+            <br>Pero he aquí mi creatividad,<br>No es igual que darte flores presencialmente<br>Pero espero que te guste este detalle
+        </p>
+    </footer>
+    <script>
+        const text = document.getElementById('desaparecer');
+        const img = document.getElementById('aparecer');
+        const img1 = document.getElementById('aparecer1');
+        const img2 = document.getElementById('aparecer2');
+        let moved = false;
+    
+        text.addEventListener('click', function() {
+            if (!moved) {
+                text.style.transition = 'all 2s ease';
+                text.style.marginTop = '5%';
+                text.style.color = 'rgba(0, 0, 0, 0)';
+                img.style.visibility = 'visible';
+                img.style.opacity = 1;
+                img1.style.visibility = 'visible';
+                img1.style.opacity = 1;
+                img2.style.visibility = 'visible';
+                img2.style.opacity = 1;
+                moved = true;
+            }
+        });
+    </script>
+</body>
+    
+</html>
