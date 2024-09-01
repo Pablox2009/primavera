@@ -16,6 +16,9 @@ footer {
   position: fixed;
   bottom: 0;
   left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 2s ease;
 }
 
 .img1 {
@@ -37,6 +40,30 @@ footer {
 .img3 {
   width: 80px;
   height: 140px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 2s ease;
+}
+
+.img4 {
+  width: 80px;
+  height: 150px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 2s ease;
+}
+
+.img5 {
+  width: 170px;
+  height: 120px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 2s ease;
+}
+
+.img6 {
+  width: 170px;
+  height: 300px;
   opacity: 0;
   visibility: hidden;
   transition: opacity 2s ease;
@@ -72,6 +99,27 @@ footer {
     z-index: 1;
     top: 50%;
     left: 25%;
+    transform: translate(-50%, -50%);
+  }
+  body .s4 {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+  }
+  body .s5 {
+    position: absolute;
+    z-index: 1;
+    top: 55%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+  }
+  body .s6 {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 20%;
     transform: translate(-50%, -50%);
   }
 }/*# sourceMappingURL=style.css.map */

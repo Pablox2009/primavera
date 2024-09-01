@@ -17,7 +17,16 @@
     <div class="s3">
         <img src="style/image/pngwing.com (2).png" class="img3" id="aparecer2">
     </div>
-    <footer>
+    <div class="s4">
+        <img src="style/image/pngwing.com (3).png" class="img4" id="aparecer3">
+    </div>
+    <div class="s5">
+        <img src="style/image/pngwing.com (4).png" class="img5" id="aparecer4">
+    </div>
+    <div class="s6">
+        <img src="style/image/pngwing.com (5).png" class="img6" id="aparecer5">
+    </div>
+    <footer id="pie">
         <p>Este 1° de Septiembre se lo conoce por entregar tulipánes a las personas.<br>Me hubiese encantado darte unas reales, 
             <br>Pero he aquí mi creatividad,<br>No es igual que darte flores presencialmente<br>Pero espero que te guste este detalle
         </p>
@@ -27,6 +36,10 @@
         const img = document.getElementById('aparecer');
         const img1 = document.getElementById('aparecer1');
         const img2 = document.getElementById('aparecer2');
+        const img3 = document.getElementById('aparecer3');
+        const img4 = document.getElementById('aparecer4');
+        const img5 = document.getElementById('aparecer5');
+        const pie = document.getElementById('pie');
         let moved = false;
     
         text.addEventListener('click', function() {
@@ -40,6 +53,14 @@
                 img1.style.opacity = 1;
                 img2.style.visibility = 'visible';
                 img2.style.opacity = 1;
+                img3.style.visibility = 'visible';
+                img3.style.opacity = 1;
+                img4.style.visibility = 'visible';
+                img4.style.opacity = 1;
+                img5.style.visibility = 'visible';
+                img5.style.opacity = 1;
+                pie.style.visibility = 'visible';
+                pie.style.opacity = 1;
                 moved = true;
             }
         });
